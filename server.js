@@ -8,14 +8,11 @@ app.use(express.static('public'));
 app.use(bodyParser.json());
 
 app.get('/api-endpoint', function(request, response) {
-    var nameString = request.query.name;
-    var historyString = request.query.history;
+    var docNoString = request.query.name;
     
       var jsonContent = { 
-            title: nameString,
-            creditCheckResult: "Fail to retrive Credit Information...",
-            contact: [ {id: 12345, name: "King Lai"},{id: 12346, name: "King King Lai"},{id: 12346, name: "King King Lai"},{id: 12346, name: "King King Lai"},{id: 12346, name: "King King Lai"},{id: 12346, name: "King King Lai"},{id: 12346, name: "King King Lai"},{id: 12346, name: "King King Lai"},{id: 12346, name: "King King Lai"},{id: 12346, name: "King King Lai"},{id: 12346, name: "King King Lai"}],
-            show: true 
+            docNo: docNoString,
+            creditCheckResult: {blacklist: true, overdue: true, inservicemrt: true},
         };
     
     response.setHeader('Access-Control-Allow-Origin','*');
