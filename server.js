@@ -8,7 +8,7 @@ app.use(express.static('public'));
 app.use(bodyParser.json());
 
 app.get('/api-endpoint', function(request, response) {
-    var docNoString = request.query.name;
+    var docNoString = request.query.docno;
     
       var jsonContent = { 
             docNo: docNoString,
