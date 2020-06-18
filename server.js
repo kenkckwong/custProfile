@@ -17,7 +17,8 @@ app.get('/api-endpoint', function(request, response) {
             contact: [ {id: 12345, name: "King Lai"},{id: 12346, name: "King King Lai"},{id: 12346, name: "King King Lai"},{id: 12346, name: "King King Lai"},{id: 12346, name: "King King Lai"},{id: 12346, name: "King King Lai"},{id: 12346, name: "King King Lai"},{id: 12346, name: "King King Lai"},{id: 12346, name: "King King Lai"},{id: 12346, name: "King King Lai"},{id: 12346, name: "King King Lai"}],
             show: true 
         };
-
+    
+    response.setHeader('Access-Control-Allow-Origin','*');
     response.send(JSON.parse(JSON.stringify(jsonContent)));
     
 });
