@@ -16,6 +16,7 @@ app.get('/api-endpoint', function(request, response) {
             profileContent: {title: "Stanley Ng", verified: "Non-verified", profileIcon: "https://devshift.biz/wp-content/uploads/2017/04/profile-icon-png-898.png"},
         };
     
+    response.setHeader('Content-Type', 'application/json');
     response.setHeader('Access-Control-Allow-Origin','*');
     response.send(JSON.parse(JSON.stringify(jsonContent)));
     
