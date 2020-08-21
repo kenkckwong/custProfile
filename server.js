@@ -13,6 +13,7 @@ app.get('/api-endpoint', function(request, response) {
       var jsonContent = { 
             docNo: docNoString,
             creditCheckResult: {blacklist: true, overdue: true, inservicemrt: true},
+            profileContent: {title: "Stanley Ng", verified: "Non-verified", profileIcon: "https://devshift.biz/wp-content/uploads/2017/04/profile-icon-png-898.png"},
         };
     
     response.setHeader('Access-Control-Allow-Origin','*');
