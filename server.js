@@ -17,7 +17,7 @@ app.get('/api-endpoint', function(request, response) {
             customTag: [{"id":"1", "title":"Blacklisted" },
                         {"id":"2", "title":"ID Verified" }],
             basicInformation:{"firstTitle":"Date of Birth","firstContent":"3yr 10mo","secondTitle":"Doc Type/ID","secondContent":"HKID Y1234567(A)"},
-          
+            miltiContents:[{"id":"1","firstTitle":"Tenure","firstContent":"25-Oct-1987","secondTitle":"Doc Type/ID","secondContent":"HKID Y1234567(A)"}],
         };
     
     response.setHeader('Content-Type', 'application/json');
