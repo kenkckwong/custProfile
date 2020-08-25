@@ -18,6 +18,10 @@ app.get('/api-endpoint', function(request, response) {
                         {"id":"2", "title":"ID Verified" }],
             basicInformation:{"firstTitle":"Date of Birth","firstContent":"3yr 10mo","secondTitle":"Doc Type/ID","secondContent":"HKID Y1234567(A)"},
             miltiContents:[{"id":"1","firstTitle":"Tenure","firstContent":"25-Oct-1987","secondTitle":"Doc Type/ID","secondContent":"HKID Y1234567(A)"}],
+            mediumIcons:{"title":"Communication Tools","action":"Credit Check",
+                         "data":[{"id":"1","icon":"https://logodownload.org/wp-content/uploads/2017/04/facebook-messenger-logo-01-1.png"},
+                                 {"id":"2","icon":"https://cdn1.iconfinder.com/data/icons/social-media-2112/29/Asset_10-512.png"}]
+                        },
         };
     
     response.setHeader('Content-Type', 'application/json');
