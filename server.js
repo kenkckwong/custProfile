@@ -14,7 +14,7 @@ app.get('/api-endpoint', function(request, response) {
             docNo: docNoString,
             creditCheckResult: {blacklist: true, overdue: true, inservicemrt: true},
             profileContent: {title: "Stanley Ng", verified: "Non-verified", profileIcon: "https://devshift.biz/wp-content/uploads/2017/04/profile-icon-png-898.png"},
-            customTag: {data:[{id:1,title:Blacklisted},{id:2,title:ID Verified}]},
+            customTag: [{id:1,title:Blacklisted},{id:2,title:ID Verified}],
         };
     
     response.setHeader('Content-Type', 'application/json');
